@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eternal Cosmic | Academic Infinity Portal</title>
-    <!-- Add Google Font for Cinzel heading if you want -->
+    <!-- Google Fonts for Cinzel Headings and Inter Body -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
     
     <style>
-        /* PASTE YOUR NEW COSMIC GLASSMORPHISM CSS HERE */
         :root {
             /* Cosmic Palette */
             --bg-space: #070913;
@@ -28,11 +27,67 @@
         }
 
         body {
+            margin: 0;
+            padding: 0;
             background-color: var(--bg-space);
             color: var(--text-primary);
             font-family: var(--font-body);
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 4rem 2rem;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(18,22,41,0.6) 0%, var(--bg-space) 100%);
+            border-bottom: 1px solid var(--border-glass);
+        }
+
+        h1 {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            letter-spacing: 4px;
             margin: 0;
-            padding: 0;
+            text-transform: uppercase;
+            background: linear-gradient(45deg, var(--text-primary), var(--accent-crystal));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            color: var(--accent-starlight);
+            letter-spacing: 2px;
+            margin-top: 1rem;
+            text-transform: uppercase;
+        }
+
+        .trajectory-banner {
+            max-width: 800px;
+            margin: 2rem auto 0 auto;
+            padding: 1rem;
+            background: rgba(114, 239, 221, 0.05);
+            border: 1px solid var(--accent-crystal);
+            border-radius: 8px;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+            color: var(--text-secondary);
+        }
+
+        .trajectory-banner strong {
+            color: var(--text-primary);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .sector-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
         }
 
         /* Glassmorphism Card System */
@@ -45,13 +100,140 @@
             padding: 2rem;
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
             transition: transform 0.3s ease, border-color 0.3s ease;
+            display: flex;
+            flex-direction: column;
         }
 
         .glass-card:hover {
-            transform: translateY(-4px);
+            transform: translateY(-5px);
             border-color: var(--accent-crystal);
         }
 
-        /* (Keep the rest of your original styles below this) */
+        .glass-card.wellness:hover {
+            border-color: var(--accent-nebula);
+        }
+
+        .sector-title {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .tech .sector-title { color: var(--accent-crystal); }
+        .wellness .sector-title { color: var(--accent-starlight); }
+
+        .sector-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .link-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .link-list li {
+            margin-bottom: 0.8rem;
+        }
+
+        .link-list a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.2s ease;
+        }
+
+        .link-list a:hover {
+            color: var(--accent-crystal);
+        }
+
+        .wellness .link-list a:hover {
+            color: var(--accent-starlight);
+        }
+
+        .link-list a::before {
+            content: "➔";
+            margin-right: 8px;
+            font-size: 0.8rem;
+            color: var(--accent-crystal);
+        }
+
+        .wellness .link-list a::before {
+            color: var(--accent-nebula);
+        }
+
+        footer {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-glass);
+            letter-spacing: 1px;
+        }
     </style>
 </head>
+<body>
+
+    <header>
+        <h1>Eternal Cosmic</h1>
+        <div class="subtitle">Academic Infinity Portal</div>
+        <div class="trajectory-banner">
+            <strong>Mission Objective:</strong> Computing orbital pathways, parsing ancient linguistics, and anchoring somatic vibrations to bridge the gap between human experience and the cosmos. 
+            <br><small>Targeting: NASA Flight Operations & Astronaut Candidate Selection</small>
+        </div>
+    </header>
+
+    <main>
+        <div class="sector-grid">
+
+            <!-- SECTOR 1: AEROSPACE & COMPUTATIONAL ORBITS -->
+            <section class="glass-card tech">
+                <h2 class="sector-title">🚀 Orbital Sectors</h2>
+                <p class="sector-desc">Live simulation mechanics, telemetry systems, and C&DH engineering modules designed for planetary exploration and spacecraft mission design.</p>
+                <ul class="link-list">
+                    <li><a href="https://github.io">Live Orbit Simulator Astra Luminous</a></li>
+                    <li><a href="https://github.io">Live Orbit Simulator Astra</a></li>
+                    <li><a href="https://github.io">Orbital Mechanics Webinar Architecture</a></li>
+                </ul>
+            </section>
+
+            <!-- SECTOR 2: DIGITAL SCHOLARSHIP & LINGUISTICS -->
+            <section class="glass-card tech">
+                <h2 class="sector-title">🌌 Linguistic Schemas</h2>
+                <p class="sector-desc">Rigorous programmatic data structures mapping out historical Sanskrit geometry, pipeline compilation, and grammar verification frameworks.</p>
+                <ul class="link-list">
+                    <li><a href="https://github.io">Sanskrit Schema Pipeline Validator</a></li>
+                    <li><a href="https://github.io">Sanskrit Infinity Environment</a></li>
+                    <li><a href="https://github.io">Sanskrit Root Repositories</a></li>
+                </ul>
+            </section>
+
+            <!-- SECTOR 3: SOMATIC FREQUENCIES & RETREATS -->
+            <section class="glass-card wellness">
+                <h2 class="sector-title">🧘‍♀️ Yoga Infinity Flow</h2>
+                <p class="sector-desc">Aligning physical frames and kinetic mechanics through custom vinyasa flows and multi-vibrational resonance using 8 acoustic crystal singing bowls.</p>
+                <ul class="link-list">
+                    <li><a href="https://github.io">Yoga Infinity Flow Platform</a></li>
+                    <li><a href="https://github.io#booking">Resort Residency & Sound Inquiries</a></li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 Eternal Cosmic. Curated by Katie Carlson. Built for Infinite Learning across the Spheres.
+    </footer>
+
+</body>
+</html>
