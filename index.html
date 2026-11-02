@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternal Cosmic | Academic Infinity Portal</title>
+    <style>
+        :root {
+            --space-black: #0b0c10;
+            --deep-vacuum: #1f2833;
+            --nebula-core: #c5a059; /* Soft golden crystal tone */
+            --pulsar-cyan: #66fcf1;  /* High-energy tech cyan */
+            --stellar-white: #f5f5f7;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--space-black);
+            color: var(--stellar-white);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 4rem 2rem;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(31,40,51,0.4) 0%, rgba(11,12,16,1) 100%);
+            border-bottom: 1px solid rgba(102, 252, 241, 0.1);
+        }
+
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 4px;
+            margin: 0;
+            text-transform: uppercase;
+            background: linear-gradient(45deg, var(--stellar-white), var(--pulsar-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--nebula-core);
+            letter-spacing: 2px;
+            margin-top: 1rem;
+            text-transform: uppercase;
+        }
+
+        .trajectory-banner {
+            max-width: 800px;
+            margin: 2rem auto 0 auto;
+            padding: 1rem;
+            background: rgba(102, 252, 241, 0.05);
+            border: 1px solid var(--pulsar-cyan);
+            border-radius: 4px;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .sector-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .sector-card {
+            background: var(--deep-vacuum);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.05);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sector-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--pulsar-cyan);
+        }
+
+        .sector-card.wellness:hover {
+            border-color: var(--nebula-core);
+        }
+
+        .sector-title {
+            font-size: 1.5rem;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .tech .sector-title { color: var(--pulsar-cyan); }
+        .wellness .sector-title { color: var(--nebula-core); }
+
+        .sector-desc {
+            color: #a4b3c6;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .link-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .link-list li {
+            margin-bottom: 0.8rem;
+        }
+
+        .link-list a {
+            color: var(--stellar-white);
+            text-decoration: none;
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.2s ease;
+        }
+
+        .link-list a:hover {
+            color: var(--pulsar-cyan);
+        }
+
+        .wellness .link-list a:hover {
+            color: var(--nebula-core);
+        }
+
+        .link-list a::before {
+            content: "➔";
+            margin-right: 8px;
+            font-size: 0.8rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: #616f80;
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Eternal Cosmic</h1>
+        <div class="subtitle">Academic Infinity Portal</div>
+        <div class="trajectory-banner">
+            <strong>Mission Objective:</strong> Computing orbital pathways, parsing ancient linguistics, and anchoring somatic vibrations to bridge the gap between human experience and the cosmos. 
+            <br><small>Targeting: NASA Flight Operations & Astronaut Candidate Selection</small>
+        </div>
+    </header>
+
+    <main>
+        <div class="sector-grid">
+
+            <!-- SECTOR 1: AEROSPACE & COMPUTATIONAL ORBITS -->
+            <section class="sector-card tech">
+                <h2 class="sector-title">🚀 Orbital Sectors</h2>
+                <p class="sector-desc">Live simulation mechanics, telemetry systems, and C&DH engineering modules designed for planetary exploration and spacecraft mission design.</p>
+                <ul class="link-list">
+                    <li><a href="https://github.io">Live Orbit Simulator Astra Luminous</a></li>
+                    <li><a href="https://github.io">Live Orbit Simulator Astra</a></li>
+                    <li><a href="https://github.io">Orbital Mechanics Webinar Architecture</a></li>
+                </ul>
+            </section>
+
+            <!-- SECTOR 2: DIGITAL SCHOLARSHIP & LINGUISTICS -->
+            <section class="sector-card tech">
+                <h2 class="sector-title">🌌 Linguistic Schemas</h2>
+                <p class="sector-desc">Rigorous programmatic data structures mapping out historical Sanskrit geometry, pipeline compilation, and grammar verification frameworks.</p>
+                <ul class="link-list">
+                    <li><a href="https://github.io">Sanskrit Schema Pipeline Validator</a></li>
+                    <li><a href="https://github.io">Sanskrit Infinity Environment</a></li>
+                    <li><a href="https://github.io">Sanskrit Root Repositories</a></li>
+                </ul>
+            </section>
+
+            <!-- SECTOR 3: SOMATIC FREQUENCIES & RETREATS -->
+            <section class="sector-card wellness">
+                <h2 class="sector-title">🧘‍♀️ Yoga Infinity Flow</h2>
+                <p class="sector-desc">Aligning physical frames and kinetic mechanics through custom vinyasa flows and multi-vibrational resonance using 8 acoustic crystal singing bowls.</p>
+                <ul class="link-list">
+                    <li><a href="https://github.io">Yoga Infinity Flow Platform</a></li>
+                    <li><a href="https://github.io#booking">Resort Residency & Sound Inquiries</a></li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 Eternal Cosmic. Curated by Katie Carlson. Built for Infinite Learning across the Spheres.
+    </footer>
+
+</body>
+</html>
